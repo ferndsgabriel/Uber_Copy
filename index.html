@@ -364,7 +364,7 @@
 
                     <div class="flex flex-col w-full p-4 gap-10
                     border-solid border-b-1 border-neutral-200">
-                        <label class="flex flex-row items-center justify-between">
+                        <label class="flex flex-row items-center justify-between cursor-pointer">
                             <p class="font-medium">Como faço para criar uma conta?</p>
 
                             <button
@@ -395,7 +395,7 @@
 
                     <div class="flex flex-col w-full p-4 gap-10
                     border-solid border-b-1 border-neutral-200">
-                        <label class="flex flex-row items-center justify-between">
+                        <label class="flex flex-row items-center justify-between cursor-pointer">
                             <p class="font-medium">O Uber está disponível na minha cidade?</p>
 
                             <button
@@ -424,7 +424,7 @@
 
                     <div class="flex flex-col w-full p-4 gap-10
                     border-solid border-b-1 border-neutral-200">
-                        <label class="flex flex-row items-center justify-between">
+                        <label class="flex flex-row items-center justify-between cursor-pointer">
                             <p class="font-medium">Como solicito uma carona?</p>
 
                             <button
@@ -454,7 +454,7 @@
 
                     <div class="flex flex-col w-full p-4 gap-10
                     border-solid border-b-1 border-neutral-200">
-                        <label class="flex flex-row items-center justify-between">
+                        <label class="flex flex-row items-center justify-between cursor-pointer">
                             <p class="font-medium">Posso usar o Uber sem smartphone?</p>
 
                             <button
@@ -486,13 +486,13 @@
             </div>
         </article>
         <!--Downloads-->
-        <article class="lg:bg-neutral-100">
+        <article class="lg:bg-neutral-100 w-full">
             <div class="p-6 flex flex-col lg:max-w-6xl mx-auto gap-8 ">
                 <h2 class="font-semibold text-3xl">Faça mais no aplicativo</h2>
 
                 <div class="flex items-center justify-between p-4 border-1 border-solid border-neutral-300
-                lg:w-1/2 lg:bg-white h-28 lg:h-44">
-                    <div class="flex items-center gap-4 h-full ">
+                lg:w-1/2 lg:bg-white h-28 lg:h-44 group cursor-pointer">
+                    <div class="flex items-center gap-4 h-full">
                         <img src="./assets/uberBig.svg" alt="icone uber" class="hidden h-full aspect-square sm:block"/>
                         <img src="./assets/qrcode.webp" alt="qr code downlaod uber" class='sm:hidden'/>
                         <div>
@@ -501,16 +501,86 @@
                         </div>
                     </div>
 
-                    <button class="hover:translate-x-2 duration-300">
+                    <button class="group-hover:translate-x-3 duration-500">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                         </svg>
                     </button>
                 </div>
             </div>
-            
+        </article>
+        <!--Sign up to ride-->
+        <article class="w-full">
+            <div class="p-6 flex flex-col lg:max-w-6xl mx-auto gap-32">
+                <label class="flex items-center justify-between cursor-pointer group overflow-hidden
+                border-solid border-b-1 py-4 border-black hover:border-neutral-600 duration-300
+                sm:w-1/2 gap-32">
+                    <h2 class="font-semibold text-3xl group-hover:text-neutral-600">Inscreva-se para viajar</h2>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 group-hover:animate-arrow group-hover:text-neutral-600">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                        </svg>
+                    </button>
+                </label>
+                <p class="text-sm">Certos requisitos e recursos variam de acordo com o país, região e cidade.</p>
+            </div>
         </article>
     </main>
+    <footer class="bg-black px-6 py-14">
+        <div class="w-full lg:max-w-6xl mx-auto flex flex-col gap-14">
+            <div class="flex flex-col gap-8 lg:flex-row justify-between">
+                <div class="flex flex-col gap-8 lg:pt-20">
+                    <img src="./assets/uber.png" alt="logo uber" class="w-12"/>
+                    <a class="text-white hover:border-solid hover:border-b-1 lg:pb-10">Visite a Central de Ajuda</a>
+                </div>
+                <p class="text-white text-sm sm:w-2/5 lg:w-72 lg:text-end">Uber Tecnologias Inc. Uber do Brasil Tecnologia Ltda | Avenida Brigadeiro Faria Lima, n.º 949,
+                Pinheiros, São Paulo/SP - CEP 05.426-200 | CNPJ: 17.895.646/0001-87</p>
+            </div>
+
+            <div class="flex flex-col gap-12 sm:grid grid-cols-2 lg:grid-cols-4">
+                <div class="text-white flex flex-col gap-4">
+                    <h3 class="text-xl">Empresa</h3>
+                    <a class="hover:opacity-70 duration-300 text-sm">Sobre</a>
+                    <a class="hover:opacity-70 duration-300 text-sm">Nossas ofertas</a>
+                    <a class="hover:opacity-70 duration-300 text-sm">Redação</a>
+                    <a class="hover:opacity-70 duration-300 text-sm">Investidores</a>
+                    <a class="hover:opacity-70 duration-300 text-sm">Blogue</a>
+                    <a class="hover:opacity-70 duration-300 text-sm">Carreiras</a>
+                    <a class="hover:opacity-70 duration-300 text-sm">IA</a>
+                    <a class="hover:opacity-70 duration-300 text-sm">Cartões de presente</a>
+                </div>
+
+                <div class="text-white flex flex-col gap-4">
+                    <h3 class="text-xl">Produtos</h3>
+                    <a class="hover:opacity-70 duration-300 text-sm">Andar de</a>
+                    <a class="hover:opacity-70 duration-300 text-sm">Dirigir</a>
+                    <a class="hover:opacity-70 duration-300 text-sm">Entregar</a>
+                    <a class="hover:opacity-70 duration-300 text-sm">Uber para empresas</a>
+                    <a class="hover:opacity-70 duration-300 text-sm">Frete Uber</a>
+                </div>
+
+                <div class="text-white flex flex-col gap-4">
+                    <h3 class="text-xl">Cidadania global</h3>
+                    <a class="hover:opacity-70 duration-300 text-sm">Segurança</a>
+                    <a class="hover:opacity-70 duration-300 text-sm">Diversidade e Inclusão</a>
+                    <a class="hover:opacity-70 duration-300 text-sm">Sustentabilidade</a>
+                </div>
+
+                <div class="text-white flex flex-col gap-4">
+                    <h3 class="text-xl">Viagem</h3>
+                    <a class="hover:opacity-70 duration-300 text-sm">reserva</a>
+                    <a class="hover:opacity-70 duration-300 text-sm">Aeroportos</a>
+                    <a class="hover:opacity-70 duration-300 text-sm">Cidades</a>
+                </div>
+            </div>
+
+            <div>
+                
+            </div>
+
+        </div>
+
+    </footer>
 </body>
 
 <script>

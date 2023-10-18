@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./**/*.{html,js}"],
   theme: {
     extend: {
       height:{
@@ -9,7 +9,20 @@ module.exports = {
     },borderWidth:{
       1:'1px',
       2:'2px'
-    },
+    },keyframes:{
+      arrow:{
+        '0%':{
+          transform:'translateX(100px)'
+        },
+        '50%':{
+        },
+        '100':{
+          transform:'translateX(0px)'
+        }
+      }
+    },animation:{
+      arrow:'arrow 1.5s alternate-reverse'
+    }
 
   },
   plugins: [],
